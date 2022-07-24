@@ -3,15 +3,15 @@ package Tempo;
 import java.util.Comparator;
 
 public class ListaTempo {
-   private String mes;
+   private Double mes;
    private Double temperatura;
 
-    public ListaTempo(String mes, Double temperatura) {
+    public ListaTempo(Double mes, Double temperatura) {
         this.mes = mes;
         this.temperatura = temperatura;
     }
 
-    public String getMes() {
+    public Double getMes() {
         return mes;
     }
 

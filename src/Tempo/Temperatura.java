@@ -7,12 +7,12 @@ import java.util.List;
 public class Temperatura {
     public static void main(String[] args) {
         List<ListaTempo> tempo = new ArrayList<>() {{
-            add(new ListaTempo("janeiro", 12.0));
-            add(new ListaTempo("fevereiro", 23.0));
-            add(new ListaTempo("março", 3.0));
-            add(new ListaTempo("abril", 21.0));
-            add(new ListaTempo("maio", 10.0));
-            add(new ListaTempo("junho", 30.0));
+            add(new ListaTempo(1d, 12.0));
+            add(new ListaTempo(2d, 23.0));
+            add(new ListaTempo(3d, 3.0));
+            add(new ListaTempo(4d, 21.0));
+            add(new ListaTempo(5d, 10.0));
+            add(new ListaTempo(6d, 30.0));
         }};
         System.out.println("Temperaturas 6 primeiros meses: " + tempo);
 
@@ -38,32 +38,7 @@ public class Temperatura {
 
         //Mostrar Meses por extenso em que temperaturas ocorreram
         Iterator<ListaTempo> iterator2 = tempo.iterator();
-        String temp = tempo.get(0).getMes();
-        //System.out.println(temp);
-        /*while (iterator2.hasNext()) {
-            String temp = iterator2.next().getMes();
-            if (temp == "1") {
-                System.out.println("1 - janeiro: " + tempo.get(0).getMes());
-            }
-            if (temp == "2") {
-                System.out.println("2 - fevereiro: " + tempo.get(0).getMes());
-            }
-            if (temp == "3") {
-                System.out.println("3 - março: " + tempo.get(0));
-            }
-            if (temp == "4") {
-                System.out.println("4 - abril: " + tempo.get(0));
-            }
-            if (temp == "5") {
-                System.out.println("5 - maio: " + tempo.get(0));
-            }
-            if (temp == "6") {
-                System.out.println("6 - junho: " + tempo.get(0));
-            }
-
-            count++;
-        }*/
-
+        Double temp = tempo.get(0).getMes();
 
     }
 }
