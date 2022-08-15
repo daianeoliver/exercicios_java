@@ -1,5 +1,5 @@
 # Collections_java_exercicios
-Repositório para armazenar exercícios propostos em curso Java - DIO
+Repositório para armazenar exercícios propostos em curso Java - DIO - ArrayList
 
 Exercício - temperatura: Coletar temperatura dos 6 primeiros meses do ano, calcular média e verificar em quais meses a temperatura ficou acima da média calculada.
 
